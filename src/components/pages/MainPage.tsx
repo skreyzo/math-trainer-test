@@ -13,6 +13,57 @@ const MainPage = () => {
         <div className="extra-block">
           Переводим смешанное число в неправильную дробь :
         </div>
+
+        <div>
+          <div id="fractions">
+            {/* Первый блок дробей */}
+            <div id="fraction1">
+              <div className="mixed-number">
+                <span className="whole-number">3</span>
+                <span className="fraction">
+                  <span className="numerator">2</span>
+                  <span className="denominator">9</span>
+                </span>
+              </div>
+              <span className="math-symbol">+</span>
+              <div className="mixed-number">
+                <span className="whole-number">4</span>
+                <span className="fraction">
+                  <span className="numerator">3</span>
+                  <span className="denominator">7</span>
+                </span>
+              </div>
+              <span className="math-symbol">=</span>
+            </div>
+
+            {/* Второй блок дробей */}
+            <div id="fraction2">
+              <div className="mixed-number">
+                <span className="fraction">
+                  <span className="numerator">
+                    <img src="src/assets/left.png" alt="(" className="bracket-image" />
+                    <input type="text" />  * <input type="text" /> 
+                    
+                    <img src="src/assets/right.png" alt=")" className="bracket-image" /> + <input type="text" />
+                  </span>
+                  <span className="denominator">9</span>
+                </span>
+              </div>
+              <span className="math-symbol">+</span>
+              <div className="mixed-number">
+                <span className="fraction">
+                  <span className="numerator">
+                    <img src="src/assets/left.png" alt="(" className="bracket-image" />
+                    <input type="text" /> * <input type="text" />
+                    <img src="src/assets/right.png" alt=")" className="bracket-image" /> + <input type="text" />
+                  </span>
+                  <span className="denominator">7</span>
+                </span>
+              </div>
+              <span className="math-symbol">=</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

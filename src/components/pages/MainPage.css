@@ -99,3 +99,98 @@
     line-height: 22px;
     color: #333;
   }
+
+  .mixed-number {
+    display: inline-flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .fraction {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4px; /* Отступ между целым числом и дробью */
+  }
+  
+  .fraction .numerator {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .fraction .denominator {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .whole-number {
+    display: inline-block;
+    vertical-align: middle; /* Выравниваем с чертой дроби */
+    font-size: 18px;
+    margin-right: 4px;
+    font-size:xx-large
+
+  }
+  
+  .math-symbol {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  
+  #fractions {
+    display: flex; /* Устанавливаем флекс-контейнер */
+    gap: 20px; /* Расстояние между блоками fraction1 и fraction2 */
+  }
+  
+  #fraction1,
+  #fraction2 {
+    
+    display: flex; /* Для правильного позиционирования содержимого внутри */
+    align-items: center; /* Вертикальное выравнивание содержимого */
+    justify-content: center; /* Горизонтальное выравнивание содержимого */
+    padding: 10px; /* Внутренние отступы для наглядности */
+    border: 1px solid #ddd; /* Граница вокруг блоков */
+    border-radius: 8px; /* Скругленные углы */
+    background-color: #f9f9f9; /* Фоновый цвет */
+    font-size:xx-large
+  }
+  
+
+  .bracket {
+    font-size: 72px;
+    line-height: 72px;
+    vertical-align: middle;
+    font-family: Arial, sans-serif; /* Шрифт для соответствия стилю текста */
+  }
+  
+  input {
+    width: 72px;
+    height: 72px;
+    padding: 8px 20px;
+    gap: 12px;
+    border-radius: 12px;
+    border: 1px solid #3cc7ff;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #3cc7ff;
+  }
+  
+
+  .digit {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
