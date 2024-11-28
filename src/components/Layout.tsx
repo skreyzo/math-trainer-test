@@ -1,13 +1,17 @@
+import React from "react";
+import NavBar from "./ui/NavBar"; // Импорт NavBar
 
-import Container from "react-bootstrap/Container";
-import { Outlet } from "react-router-dom";
-import NavBar from "./ui/NavBar";
+type LayoutProps = {
+  children: React.ReactNode;
+};
 
-export default function Layout() {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Container>
-      <NavBar />
-      <Outlet />
-    </Container>
+    <div>
+      <NavBar /> {/* Навбар добавлен сюда */}
+      <main>{children}</main>
+    </div>
   );
-}
+};
+
+export default Layout;
