@@ -1,29 +1,17 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './components/Layout';
-import MainPage from './components/pages/MainPage';
-import "./App.css"
-
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import MainPage from "./components/pages/MainPage";
 
 function App() {
-
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        {
-          path: '/',
-          element: <MainPage />,
-        },
-
-        
-      ],
-    },
-  ]);
-  return <RouterProvider router={router} />;
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
 }
 
 export default App;
-
-
-

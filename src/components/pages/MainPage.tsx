@@ -1,6 +1,8 @@
 import "./MainPage.css";
 
 const MainPage = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="main-container">
       <div>Тренажер / Арифметические действия с обыкновенными дробями</div>
@@ -47,13 +49,13 @@ const MainPage = () => {
                 <span className="fraction">
                   <span className="numerator">
                     <img
-                      src="src/assets/left.png"
+                      src={`${baseUrl}assets/left.png`}
                       alt="("
                       className="bracket-image"
                     />
                     <input type="text" /> * <input type="text" />
                     <img
-                      src="src/assets/right.png"
+                      src={`${baseUrl}assets/right.png`}
                       alt=")"
                       className="bracket-image"
                     />{" "}
@@ -69,13 +71,13 @@ const MainPage = () => {
                 <span className="fraction">
                   <span className="numerator">
                     <img
-                      src="src/assets/left.png"
+                      src={`${baseUrl}assets/left.png`}
                       alt="("
                       className="bracket-image"
                     />
                     <input type="text" /> * <input type="text" />
                     <img
-                      src="src/assets/right.png"
+                      src={`${baseUrl}assets/right.png`}
                       alt=")"
                       className="bracket-image"
                     />{" "}
